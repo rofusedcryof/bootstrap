@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinchan's Tabs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white">
+<div class="container mt-4">
+    <ul class="nav nav-tabs nav-fill custom-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="beranda-tab" data-bs-toggle="tab" data-bs-target="#beranda" type="button" role="tab">Beranda</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tentang-tab" data-bs-toggle="tab" data-bs-target="#tentang" type="button" role="tab">Tentang</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pendidikan-tab" data-bs-toggle="tab" data-bs-target="#pendidikan" type="button" role="tab">Pendidikan</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="kisahku-tab" data-bs-toggle="tab" data-bs-target="#kisahku" type="button" role="tab">Kisahku</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tugas-tab" data-bs-toggle="tab" data-bs-target="#tugas" type="button" role="tab">Tugas</button>
+        </li>
+    </ul>
+
+    <div class="tab-content border p-4 bg-secondary bg-opacity-10 rounded-bottom">
+        <div class="tab-pane fade show active" id="beranda" role="tabpanel">
+            <h3 class="text-center neon-text">Hello, World …</h3>
+            <div class="text-center">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Shin_Chan.png/220px-Shin_Chan.png" width="150" class="rounded-circle mb-3 shadow">
+                <h4>Sinchan</h4>
+                <p>2153114007</p>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="tentang" role="tabpanel">
+            <h3 class="text-center">Diriku</h3>
+            <div class="row">
+                <div class="col-md-6"><p>Lorem ipsum dolor sit amet...</p></div>
+                <div class="col-md-6"><p>Pellentesque pulvinar, dolor ac...</p></div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pendidikan" role="tabpanel">
+            <h3 class="text-center">Riwayat Pendidikan</h3>
+            <table class="table table-dark table-striped table-bordered">
+                <thead>
+                    <tr><th>Tahun</th><th>Nama Sekolah</th><th>Alamat Sekolah</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2000 - 2002</td><td>Playgroup “Riang Gembira”</td><td>Jl. Jalan Aja, Kotaraja</td></tr>
+                    <tr><td>2002 - 2004</td><td>TK “Anak Bahagia”</td><td>J. Sehat Selalu</td></tr>
+                    <tr><td>2004 - 2010</td><td>SD ….</td><td>...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tab-pane fade" id="kisahku" role="tabpanel">
+            <h3 class="text-center">Aku dan Temanku</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Shin_Chan.png/220px-Shin_Chan.png" class="card-img-top">
+                        <div class="card-body"><p class="card-text">Bersama keluarga</p></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Shin_Chan.png/220px-Shin_Chan.png" class="card-img-top">
+                        <div class="card-body"><p class="card-text">Bersama teman</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="tugas" role="tabpanel">
+            <h3 class="text-center">Tugas (JS)</h3>
+            <form id="formTugas">
+                <div class="mb-3">
+                    <label for="namaDepan" class="form-label">Nama:</label>
+                    <input type="text" class="form-control" id="namaDepan">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="jumlahHobi" class="form-label">Jumlah Pilihan:</label>
+                    <input type="number" class="form-control" id="jumlahHobi">
+                </div>
+                <button type="button" class="btn btn-outline-light" onclick="buatInputHobi()">OK</button>
+                <div id="daftarHobi" class="mt-3"></div>
+            </form>
+            <div id="hasil" class="mt-3"></div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UTS Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 100px;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    .semi-transparent {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .nav-tabs .nav-link {
+      color: white;
+    }
+    .nav-tabs .nav-link.active {
+      color: black !important;
+      background-color: white !important;
+      border-radius: 10px 10px 0 0;
+    }
+    .tab-content {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 0 0 10px 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar + Tabs -->
+<nav class="navbar navbar-expand-lg navbar-dark semi-transparent fixed-top">
+  <div class="container-fluid d-flex flex-column">
+    <div class="d-flex w-100 align-items-center justify-content-between">
+      <a class="navbar-brand" href="#">🌟 UTS Bootstrap</a>
+    </div>
+    <ul class="nav nav-tabs w-100 justify-content-center border-0" id="myTab" role="tablist">
+      <li class="nav-item"><button class="nav-link active" id="beranda-tab" data-bs-toggle="tab" data-bs-target="#beranda" type="button" role="tab">Beranda</button></li>
+      <li class="nav-item"><button class="nav-link" id="tentang-tab" data-bs-toggle="tab" data-bs-target="#tentang" type="button" role="tab">Tentang</button></li>
+      <li class="nav-item"><button class="nav-link" id="kisahku-tab" data-bs-toggle="tab" data-bs-target="#kisahku" type="button" role="tab">Kisahku</button></li>
+      <li class="nav-item"><button class="nav-link" id="pendidikan-tab" data-bs-toggle="tab" data-bs-target="#pendidikan" type="button" role="tab">Pendidikan</button></li>
+      <li class="nav-item"><button class="nav-link" id="tugas-tab" data-bs-toggle="tab" data-bs-target="#tugas" type="button" role="tab">Tugas</button></li>
+      <li class="nav-item"><button class="nav-link" id="kontak-tab" data-bs-toggle="tab" data-bs-target="#kontak" type="button" role="tab">Kontak</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Tab Content -->
+<div class="container mt-4">
+  <div class="tab-content" id="myTabContent">
+
+    <!-- Beranda -->
+    <div class="tab-pane fade show active" id="beranda" role="tabpanel">
+      <h2>Selamat Datang!</h2>
+      <p>Ini adalah halaman UTS dengan Bootstrap dan JavaScript.</p>
+    </div>
+
+    <!-- Tentang -->
+    <div class="tab-pane fade" id="tentang" role="tabpanel">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah mahasiswa informatika yang sedang belajar pengembangan web dan UI modern.</p>
+    </div>
+
+    <!-- Kisahku -->
+    <div class="tab-pane fade" id="kisahku" role="tabpanel">
+      <h2>Kisahku</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-dark">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Foto 1">
+            <div class="card-body">
+              <p class="card-text">Kenangan masa kecil di kampung halaman.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-dark">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Foto 2">
+            <div class="card-body">
+              <p class="card-text">Saat pertama kali mengenal coding.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-dark">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Foto 3">
+            <div class="card-body">
+              <p class="card-text">Hari kelulusan SMA bersama teman-teman tercinta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pendidikan -->
+    <div class="tab-pane fade" id="pendidikan" role="tabpanel">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>SD Negeri 1 Harapan (2008 - 2014)</li>
+        <li>SMP Negeri 2 Harapan (2014 - 2017)</li>
+        <li>SMA Negeri 3 Harapan (2017 - 2020)</li>
+        <li>Universitas Sanata Dharma - Informatika (2020 - sekarang)</li>
+      </ul>
+    </div>
+
+    <!-- Tugas -->
+    <div class="tab-pane fade" id="tugas" role="tabpanel">
+      <h2>Tugas</h2>
+      <form onsubmit="return tampilkanHobi();">
+        <div class="row mb-3">
+          <div class="col-md-6"><input type="text" id="depan" class="form-control" placeholder="Nama Depan" required></div>
+          <div class="col-md-6"><input type="text" id="belakang" class="form-control" placeholder="Nama Belakang" required></div>
+        </div>
+        <input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+
+        <input type="text" id="hobi1" class="form-control mb-2" placeholder="Hobi 1">
+        <input type="text" id="hobi2" class="form-control mb-2" placeholder="Hobi 2">
+        <input type="text" id="hobi3" class="form-control mb-2" placeholder="Hobi 3">
+        <input type="text" id="hobi4" class="form-control mb-2" placeholder="Hobi 4">
+
+        <button type="submit" class="btn btn-danger mt-2">OK</button>
+      </form>
+
+      <div class="mt-4">
+        <p><strong>Pilih hobi yang paling kamu minati:</strong></p>
+        <div id="hasil"></div>
+        <button class="btn btn-success mt-3">OK</button>
+        <button class="btn btn-secondary mt-3" onclick="window.location.reload();">Reset</button>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div class="tab-pane fade" id="kontak" role="tabpanel">
+      <h2>Kontak</h2>
+      <p>Email: mahasiswa@example.com</p>
+      <p>Instagram: @mahasiswa_informatika</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function tampilkanHobi() {
+    let hasil = document.getElementById("hasil");
+    hasil.innerHTML = "";
+    let hobi = [];
+    for (let i = 1; i <= 4; i++) {
+      let input = document.getElementById("hobi" + i).value.trim();
+      if (input) hobi.push(input);
+    }
+    hobi.forEach(function(item) {
+      let div = document.createElement("div");
+      div.innerHTML = `<input type="checkbox"> ${item}`;
+      hasil.appendChild(div);
+    });
+    return false;
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UTS PBPA - UTS 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarTabs" data-bs-offset="50" class="bg-dark text-light">
+    <nav id="navbarTabs" class="navbar navbar-expand-lg navbar-dark sticky-top semi-transparent fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">UTS 1_235314023</a>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#kisahku">Kisahku</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pendidikan">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tugas">Tugas</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#kontak">Kontak</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="tab-content p-4">
+        <div id="beranda" class="tab-pane fade show active text-center">
+            <div class="jumbotron py-4 bg-black rounded shadow">
+            <h1 class="display-5 text-warning">Hai semuanya, selamat datang di beranda website aku! Di sini kamu bisa tahu lebih banyak tentang aku, cerita hidupku, dan hal-hal seru lainnya yang pengen aku bagi. Makasih udah mampir, semoga kamu suka dan bisa dapat hal bermanfaat dari website ini!</h1>
+            <img src="dzxkuliah.jpeg" alt="Foto Profil" class="card-img-top mx-auto d-block" />
+            <!-- <h3 class="mt-3 text-info">Dionysius Diaz Damar Wilansa</h3> -->
+            <h3 class="mt-3">Dionysius Diaz Damar Wilansa</h3>
+            <p class="nim">235314023</p>
+            </div>
+        </div>
+        
+        <div id="tentang" class="tab-pane fade">
+            <div class="text-left mb-3">
+            <button class="btn btn-warning me-2" onclick="switchLang('id')">ID</button>
+            <button class="btn btn-info me-2" onclick="switchLang('en')">ENG</button>
+            <button class="btn btn-danger" onclick="switchLang('jp')">JP</button>
+            </div>
+        
+            <div id="tentang-content" class="row justify-content-center">
+            <div id="lang-id" class="lang-section col-md-8">
+                <p>Halo! Aku adalah mahasiswa Informatika di Universitas Sanata Dharma. Sejak kecil, aku udah tertarik banget sama hal-hal yang berbau teknologi.</p>
+                <p>Awalnya cuma suka main game, tapi lama-lama penasaran gimana sih cara kerja program atau aplikasi yang sering aku pakai sehari-hari.</p>
+                <p>Sejak masuk kuliah, aku mulai belajar bahasa pemrograman kayak Python, JavaScript, dan juga HTML-CSS buat bikin web.</p>
+                <p>Salah satu alasan aku ambil jurusan ini karena aku pengen jadi orang yang bisa bikin solusi digital yang bantu hidup orang jadi lebih gampang.</p>
+                <p>Selain ngoding, aku juga suka desain UI/UX. Kadang aku ngulik Figma buat bikin tampilan aplikasi yang menarik dan mudah dipakai.</p>
+                <p>Aku percaya kalau teknologi itu bukan cuma soal mesin atau coding aja, tapi juga soal gimana kita bisa bantu orang lewat teknologi.</p>
+                <p>Di kampus, aku aktif ikut beberapa proyek kelompok bareng teman-teman. Biasanya bikin aplikasi sederhana buat tugas kuliah atau iseng-iseng belajar bareng.</p>
+                <p>Aku juga pernah ikutan hackathon. Walaupun belum juara, tapi seru banget bisa kerja bareng tim, brainstorming ide, dan nyusun fitur dalam waktu terbatas.</p>
+                <p>Kalau lagi santai, aku suka nonton video tutorial atau ikut kelas online buat nambah skill baru. Dunia IT tuh cepet banget berubah, jadi harus terus update!</p>
+                <p>Ngoding itu kadang bikin stres, tapi juga bikin nagih. Rasanya puas banget kalau program yang kita buat akhirnya jalan sesuai yang diharapkan.</p>
+                <p>Selain dunia teknis, aku juga belajar pentingnya komunikasi dan kerja tim. Apalagi waktu harus presentasiin hasil kerja ke dosen atau teman sekelas.</p>
+                <p>Pernah juga bantu temen bikin portofolio online. Dari situ aku belajar soal pentingnya tampilan visual yang oke dan struktur konten yang rapi.</p>
+                <p>Ke depannya, aku pengen kerja di bidang software development, mungkin jadi front-end developer atau full-stack engineer.</p>
+                <p>Atau siapa tahu bisa bikin startup kecil-kecilan yang fokus di aplikasi edukasi atau hal-hal yang bermanfaat buat anak muda.</p>
+                <p>Aku juga tertarik sama bidang keamanan siber. Soalnya makin ke sini, urusan data pribadi makin penting dan rawan kebocoran.</p>
+                <p>Belajar IT itu nggak cuma soal hafalin sintaks, tapi juga tentang logika, kreativitas, dan semangat buat terus nyoba hal baru.</p>
+                <p>Menurutku, dunia IT itu luas banget. Setiap orang bisa nemuin jalannya sendiri, entah itu di programming, desain, AI, game, atau data.</p>
+                <p>Sekarang aku lagi ngulik-ngulik sedikit soal machine learning. Walaupun masih dasar banget, tapi cukup menarik buat dipelajari.</p>
+                <p>Aku seneng kalau bisa ngobrol sama orang-orang yang juga punya minat serupa. Bisa tukar pikiran, sharing tools atau bahkan project bareng.</p>
+                <p>Intinya, aku pengen terus berkembang jadi pribadi yang nggak cuma jago ngoding, tapi juga peka sama kebutuhan orang lain lewat teknologi.</p>
+                <p>Dan ya, perjalanan ini masih panjang. Tapi aku yakin, selama terus belajar dan semangat, pasti bisa capai cita-cita yang aku impikan.</p>
+                <p>Terima kasih udah mampir ke halaman ini. Semoga kamu juga semangat dalam perjalananmu, apapun bidang yang kamu tekuni!</p>
+            </div>
+        
+            <div id="lang-en" class="lang-section col-md-8 d-none">
+                <p>Hi there! I'm an Informatics student at Sanata Dharma University. Ever since I was a kid, I've always been super curious about anything related to technology.</p>
+                <p>It all started with a love for playing games, but over time I got more interested in how programs and apps actually work behind the scenes.</p>
+                <p>Since starting university, I've been learning programming languages like Python, JavaScript, and also HTML-CSS for web development.</p>
+                <p>One of the reasons I chose this major is because I want to create digital solutions that make people's lives easier.</p>
+                <p>Besides coding, I'm also into UI/UX design. I enjoy experimenting with Figma to design app interfaces that are both good-looking and user-friendly.</p>
+                <p>I believe technology is not just about machines or lines of code, but about helping people and solving real-life problems.</p>
+                <p>On campus, I often join group projects with my classmates. We usually build simple apps either for assignments or just for fun and learning.</p>
+                <p>I once joined a hackathon too. I didn’t win, but it was an amazing experience to work in a team, brainstorm ideas, and build something in a short amount of time.</p>
+                <p>When I have free time, I like to watch tutorials or take online courses to level up my skills. Tech moves fast, so it's important to keep learning!</p>
+                <p>Coding can be frustrating sometimes, but also really satisfying. It feels great when your code finally works the way you want it to.</p>
+                <p>Aside from the technical stuff, I also learned how important communication and teamwork are—especially when presenting our work to professors or friends.</p>
+                <p>I even helped a friend build their personal portfolio website once. That experience taught me how valuable clean layout and nice visuals can be.</p>
+                <p>In the future, I hope to work in software development—maybe as a front-end developer or even a full-stack engineer.</p>
+                <p>Or who knows, maybe I'll build a small startup that focuses on educational apps or tools to help young people learn easier.</p>
+                <p>I'm also getting interested in cybersecurity, since data privacy is becoming more important these days.</p>
+                <p>Learning IT isn’t just about memorizing syntax. It's about logic, creativity, and the willingness to explore new things.</p>
+                <p>The world of IT is huge, and I believe everyone can find their own path—whether it's in programming, design, AI, gaming, or data analysis.</p>
+                <p>Right now, I'm starting to explore machine learning. Still very basic, but it's quite exciting to dive into.</p>
+                <p>I enjoy talking with people who share the same interests. It's fun to exchange ideas, recommend tools, or even collaborate on small projects.</p>
+                <p>In the end, I want to become someone who's not only good at coding, but also empathetic and helpful through technology.</p>
+                <p>The journey is still long, but as long as I keep learning and growing, I’m sure I’ll reach my dreams someday.</p>
+                <p>Thanks for stopping by! I hope you stay inspired in whatever field you're passionate about.</p>
+            </div>
+        
+            <div id="lang-jp" class="lang-section col-md-8 d-none">
+                <p>こんにちは！私はサナタ・ダルマ大学の情報学科の学生です。子どものころから、テクノロジーに関することにずっと興味がありました。</p>
+                <p>最初はただゲームをするのが好きだったけど、だんだん「このアプリやプログラムってどうやって動いてるんだろう？」って気になってきました。</p>
+                <p>大学に入ってからは、Python や JavaScript、HTML・CSS など、プログラミング言語を学び始めました。</p>
+                <p>この学科を選んだ理由の一つは、デジタルの力で人々の生活を少しでも便利にしたいからです。</p>
+                <p>コードを書くことだけじゃなくて、UI/UXデザインにも興味があります。Figmaを使って、見た目がきれいで使いやすいアプリのデザインを作るのが好きです。</p>
+                <p>テクノロジーは単なる機械やコードじゃなくて、人を助けたり、問題を解決するための手段だと思っています。</p>
+                <p>大学では、友だちと一緒にプロジェクトをしたり、チームで簡単なアプリを作ったりしています。課題としても、趣味としても。</p>
+                <p>ハッカソンにも一度参加したことがあります。勝てなかったけど、すごくいい経験になりました。短時間で何かを作るって、めっちゃ楽しかったです！</p>
+                <p>時間があるときは、YouTubeでチュートリアルを見たり、オンラインコースを受けてスキルアップを目指しています。</p>
+                <p>コードが思ったように動かない時もあるけど、ちゃんと動いた時の達成感が最高です。</p>
+                <p>技術的なことだけじゃなくて、プレゼンとかチームワークの大切さも学んでいます。特に人前で発表するときに役立ちます。</p>
+                <p>友だちのポートフォリオサイトを作るのを手伝ったこともあります。デザインの重要さを実感しました。</p>
+                <p>将来はソフトウェア開発の仕事がしたいです。フロントエンドやフルスタックエンジニアになれたらいいな。</p>
+                <p>もしかしたら、小さなスタートアップを立ち上げて、教育系のアプリを作るのも面白いかもしれません。</p>
+                <p>最近はサイバーセキュリティにも興味が出てきました。個人情報の保護ってすごく大事ですよね。</p>
+                <p>ITを学ぶって、ただコードを書くことだけじゃなくて、論理的思考や創造力、新しいものにチャレンジする気持ちが大事です。</p>
+                <p>ITの世界って本当に広いから、自分に合った道がきっと見つかると思います。プログラミングだけじゃなくて、デザイン、AI、ゲーム開発、データ分析とかいろいろ。</p>
+                <p>今は機械学習にも少しずつ触れ始めています。まだ初心者だけど、すごくワクワクしています！</p>
+                <p>同じ興味を持っている人と話すのも大好きです。ツールを紹介し合ったり、一緒に小さなプロジェクトをしたり。</p>
+                <p>最終的には、技術だけじゃなくて、やさしさや思いやりも持ったITエンジニアになりたいです。</p>
+                <p>まだまだ学ぶことはたくさんあるけど、少しずつでも成長して、自分の夢に近づいていきたいです。</p>
+                <p>ここまで読んでくれて、ありがとうございました！お互いに夢に向かってがんばりましょう！</p>
+            </div>
+            </div>
+        </div>
+        
+        <div id="kisahku" class="tab-pane fade text-center">
+        <h3 class="judul-kisahku">😵CeritaKu😵</h3>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+            <div class="card kisah-card bg-secondary text-light shadow-sm h-100 animate-slide">
+                <img src="aku.jpeg" class="card-img-top" />
+                <div class="card-body">
+                <p class="card-text">Saat Foto di Lift Psikologi</p>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card kisah-card bg-secondary text-light shadow-sm h-100 animate-slide delay-1">
+                <img src="renang2-ghibliStyle.jpeg" class="card-img-top" />
+                <div class="card-body">
+                <p class="card-text">Renang Sama Teman (Edit Ghibli Style)</p>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card kisah-card bg-secondary text-light shadow-sm h-100 animate-slide delay-2">
+                <img src="difotoTemen.jpeg" class="card-img-top" />
+                <div class="card-body">
+                <p class="card-text">Aku saat pemrograman analisis data</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="pendidikan" class="tab-pane fade">
+        <h3 class="text-center judul-kisahku">Riwayat Pendidikan👨🏻‍🎓</h3>
+        <div class="table-responsive mt-3">
+            <table class="table table-dark table-bordered table-striped">
+            <thead class="table-info text-dark">
+                <tr>
+                <th class="text-center">Tahun</th>
+                <th class="text-center">Nama Sekolah</th>
+                <th class="text-center">Alamat Sekolah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>2008 - 2010</td><td>TK Tunas Kartini</td><td>Jl. Dondongan-Kebon Agung</td></tr>
+                <tr><td>2011 - 2017</td><td>SDN Jonggrangan</td><td>Jl. Slarongan</td></tr>
+                <tr><td>2017 - 2020</td><td>SMP Pangudi Luhur</td><td>Jl. Mergan-Moyudan</td></tr>
+                <tr><td>2020 - 2023</td><td>SMA Pangudi Luhur</td><td>Jl. Sedayu-Argomulyo</td></tr>
+                <tr><td>2023 - Sekarang</td><td>Universitas Sanata Dharma</td><td>Jl. Paingan</td></tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+
+        <div id="tugas" class="tab-pane fade">
+        <form id="tugasForm" class="mt-4" onsubmit="return false;">
+            <div class="mb-3">
+            <label for="namaDepan" class="form-label">Nama Depan</label>
+            <input type="text" class="form-control" id="namaDepan" placeholder="contoh : Diaz" required />
+            </div>
+            <div class="mb-3">
+            <label for="namaBelakang" class="form-label">Nama Belakang</label>
+            <input type="text" class="form-control" id="namaBelakang" placeholder="contoh : Damar" required />
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="contoh : dezttroll@example.com" required />
+            </div>
+            <div class="mb-3">
+            <label for="jumlahHobi" class="form-label">Jumlah Pilihan Hobi</label>
+            <input type="number" class="form-control" id="jumlahHobi" min="1" max="10" placeholder="masukkan jumlah hobi (min 1, max 10)" required />
+            </div>
+            <button type="button" class="btn btn-warning shadow" onclick="lanjutHobi()">OK</button>
+            <div id="formHobiInput" class="mt-4"></div>
+            <div id="formCheckboxHobi" class="mt-4"></div>
+            <div id="hasilOutput" class="alert alert-success mt-4 d-none"></div>
+            <button type="button" class="btn btn-secondary mt-3" onclick="resetForm()">Reset</button>
+        </form>
+        </div>
+
+            <div id="kontak" class="tab-pane fade">
+                <h3 class="text-center text-warning judul-kisahku mb-4">Hubungi Saya</h3>
+                
+                <div class="container d-flex justify-content-center">
+                <div class="card bg-dark text-light p-4 shadow w-100" style="max-width: 800px; border-radius: 15px;">
+                    <p class="text-center text-light mb-4">Kamu bisa kenalan lebih lanjut denganku👇🏻</p>
+                    
+                    <div class="kontak d-flex flex-wrap justify-content-center gap-3">
+                    
+                    <a href="mailto:dezttroll@gmail.com" class="text-decoration-none text-info d-flex align-items-center p-2 px-3 rounded">
+                        <i class="fas fa-envelope me-2 fs-5"></i> dezttroll@gmail.com
+                    </a>
+            
+                    <a href="https://www.instagram.com/oxcwuv/" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded" style="color: #e1306c;">
+                        <i class="fab fa-instagram me-2 fs-5"></i> @oxcwuv
+                    </a>
+            
+                    <a href="https://github.com/rofusedcryof" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-light">
+                        <i class="fab fa-github me-2 fs-5"></i> rofusedcryof
+                    </a>
+            
+                    <a href="https://www.linkedin.com/in/dionysius-diaz-damar-wilansa-934843336/" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-primary">
+                        <i class="fab fa-linkedin me-2 fs-5"></i> Dionysius Diaz
+                    </a>
+            
+                    <a href="https://wa.me/628812669728" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-success">
+                        <i class="fab fa-whatsapp me-2 fs-5"></i> WhatsApp
+                    </a>
+            
+                    <a href="https://www.x.com/cerberusmlcsgmr" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-dark" style="background-color: #ffffff22;">
+                        <i class="fab fa-x-twitter me-2 fs-5"></i> cerberusmlcsgmr
+                    </a>
+            
+                    <a href="https://www.youtube.com/@dezttroll74" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-danger">
+                        <i class="fab fa-youtube me-2 fs-5"></i> dezttroll74
+                    </a>
+
+                    <a href="https://line.me/ti/p/rjEjjetYk9" target="_blank" class="text-decoration-none d-flex align-items-center p-2 px-3 rounded text-success">
+                        <i class="fab fa-line me-2 fs-5"></i> @dionysiusdiaz
+            
+                    </div>
+                </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="switchLang.js"></script>
+    </body>
+    </html>

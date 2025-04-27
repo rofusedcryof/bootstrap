@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(0, 0, 128);
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  color: #ddd;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
